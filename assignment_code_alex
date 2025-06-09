@@ -1,0 +1,59 @@
+
+
+# # Question F
+# #How many moles water vapour
+# lst_H2O = []
+# lst_H2 = []
+# lst_O2 = []
+# lst_NO = []
+# lst_NO2 = []
+
+# fig, ax = plt.subplots(figsize=(10, 6))
+# H2O_MAX = profile_lean("H2O").X[-1,0]
+
+# ax.plot(profile_lean.grid * 100, profile_lean.T, label=f"T - Water vapour{(0)*25}%")
+# for i in range(4):
+#     phi_lean= phi_lean*(1+3.7)/(H2O_MAX/4*(i+1)+1+3.7)
+#     flame_water = freeflamestuff(T_lean,12E5,phi_lean,fuel_comp_lean,False,False,H2O_MAX/4*(i+1)/4) 
+#     profile_water = flame_water.to_array()
+    
+#     #ax.plot(profile_water.grid * 100, profile_water("NO").Y, label=f"NO - Water vapour{(i+1)*25}%")
+#     ax.plot(profile_water.grid * 100, profile_water.T, label=f"T - Water vapour{(i+1)*25}%")
+#     # ax3.plot(profile_lean.grid * 100, profile_lean("H2").Y, label="H$_2$")
+#     # ax4.plot(profile_lean.grid * 100, profile_lean("NO").Y, label="NO")
+#     # ax5.plot(profile_lean.grid * 100, profile_lean("NO2").Y, label="NO$_2$")
+
+# ax.legend(loc="best")
+# ax.set_xlabel("Distance [cm]")
+# ax.set_ylabel("Temperature [K]")
+# ax.set_title("Temperature profile")
+# ax.grid()
+# plt.show()
+
+# fig, ax1 = plt.subplots(figsize=(10, 6))
+# H2O_MAX = profile_lean("H2O").X[-1,0]
+
+# ax1.plot(profile_lean.grid * 100, profile_lean("NO").Y, label=f"NO - Water vapour{(0)*25}%")
+# for i in range(4):
+#     phi_lean= phi_lean*(1+3.7)/(H2O_MAX/4*(i+1)+1+3.7)
+#     flame_water = freeflamestuff(T_lean,12E5,phi_lean,fuel_comp_lean,False,False,H2O_MAX/4*(i+1)/4) 
+#     profile_water = flame_water.to_array()
+    
+#     ax1.plot(profile_water.grid * 100, profile_water("NO").Y, label=f"NO - Water vapour{(i+1)*25}%")
+#     #ax1.plot(profile_lean.grid * 100, profile_lean.T, label=f"T - Water vapour{(i+1)*25}%")
+#     # ax3.plot(profile_lean.grid * 100, profile_lean("H2").Y, label="H$_2$")
+#     # ax4.plot(profile_lean.grid * 100, profile_lean("NO").Y, label="NO")
+#     # ax5.plot(profile_lean.grid * 100, profile_lean("NO2").Y, label="NO$_2$")
+
+# ax1.legend(loc="best")
+# ax1.set_xlabel("Distance [cm]")
+# ax1.set_ylabel("Mass fraction [-]")
+# ax1.set_title("Mass fraction profile")
+# ax1.grid()
+# plt.show()
+
+
+
+
+
+
